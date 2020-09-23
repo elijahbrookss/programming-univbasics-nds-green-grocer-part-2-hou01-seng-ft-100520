@@ -298,6 +298,8 @@ describe "Grocer" do
         cart = [beer, beer, beer]
         beer_coupon = coupons[1]
         coupons = [beer_coupon, beer_coupon]
+        p cart, "--------------"
+        p coupons
         expect(checkout(cart, coupons)).to eq(33.00)
       end
     end
