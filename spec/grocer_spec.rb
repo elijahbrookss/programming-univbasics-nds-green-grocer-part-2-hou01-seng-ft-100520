@@ -264,6 +264,7 @@ describe "Grocer" do
         p cart
         p "---------------"
         p [coupons.first, coupons.last]
+        
         expect(checkout(cart, [coupons.first, coupons.last])).to eq(22.60)
       end
 
