@@ -53,8 +53,7 @@ end
 def checkout(cart, coupons)
   total = 0;
   consolidated_cart = consolidate_cart(cart);
-  consolidated_cart
-  couponds_applied_cart = apply_coupons(consolidated_cart, coupons)
+  couponds_applied_cart = apply_coupons(consolidated_cart, consolidate_cart(coupons))
   final_cart = apply_clearance(couponds_applied_cart);
   final_cart.each {|item| total += item[:price] * item[:count]};
 
