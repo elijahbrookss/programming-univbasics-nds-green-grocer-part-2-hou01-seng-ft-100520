@@ -64,12 +64,4 @@ def checkout(cart, coupons)
   return total
 end
 
-p checkout([
-  { :item => "CANNED BEANS", :price => 3.00, :clearance => false },
-  { :item => "CANNED CORN", :price => 2.50, :clearance => false },
-  { :item => "SALSA", :price => 1.50, :clearance => false },
-  { :item => "TORTILLAS", :price => 2.00, :clearance => false },
-  { :item => "HOT SAUCE", :price => 1.75, :clearance => false },
-  { :item => "TORTILLAS", :price => 2.00, :clearance => false },
-  { :item => "HOT SAUCE", :price => 1.75, :clearance => false }
-], [])
+p checkout([{:item=>"SOY MILK", :price=>4.5, :clearance=>true}, {:item=>"AVOCADO", :price=>3.0, :clearance=>true}, {:item=>"AVOCADO", :price=>3.0, :clearance=>true}, {:item=>"CHEESE", :price=>6.5, :clearance=>false}, {:item=>"CHEESE", :price=>6.5, :clearance=>false}, {:item=>"CHEESE", :price=>6.5, :clearance=>false}], [])
