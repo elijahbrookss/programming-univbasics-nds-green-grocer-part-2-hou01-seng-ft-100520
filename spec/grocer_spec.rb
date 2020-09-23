@@ -261,7 +261,7 @@ describe "Grocer" do
         milk =    find_item_by_name_in_collection("SOY MILK", items)
 
         cart = [milk, avocado, avocado, cheese, cheese, cheese]
-
+        p [coupons.first, coupons.last]
         expect(checkout(cart, [coupons.first, coupons.last])).to eq(22.60)
       end
 
